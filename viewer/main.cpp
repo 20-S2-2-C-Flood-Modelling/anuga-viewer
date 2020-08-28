@@ -130,14 +130,14 @@ int main( int argc, char **argv )
 
 
    // need swollen binary directory which contains resource images
-   char *ptr = getenv( "SWOLLEN_BINDIR" );
+   char *ptr = getenv( "ANUGA_VIEWER_BIN" );
    if (ptr)
 	  sww->setSwollenDir( std::string(ptr) );
    else if( osgDB::getFilePath(argv[0]) == "" )
 	  sww->setSwollenDir( std::string(".") );
    else
 	  sww->setSwollenDir( osgDB::getFilePath(argv[0]) );
-   std::cout << "SWOLLEN_BINDIR = " << sww->getSwollenDir() << std::endl;
+   std::cout << "ANUGA_VIEWER_BIN = " << sww->getSwollenDir() << std::endl;
 
 
    // default arguments and command line parameters

@@ -41,18 +41,18 @@ HeadsUpDisplay::HeadsUpDisplay()
    _projection->setMatrix( osg::Matrix::ortho2D(0,ORTHO2D_WIDTH,0,ORTHO2D_HEIGHT) );
 
    // font
-   std::string SWOLLEN_BINDIR;
+   std::string ANUGA_VIEWER_BIN;
    std::string FONT_PATH;
-   char *ptr = getenv( "SWOLLEN_BINDIR" );
+   char *ptr = getenv( "ANUGA_VIEWER_BIN" );
 
    if (ptr)
-      SWOLLEN_BINDIR = std::string(ptr);
+      ANUGA_VIEWER_BIN = std::string(ptr);
    else
-      SWOLLEN_BINDIR = std::string( "." );
+      ANUGA_VIEWER_BIN = std::string( "." );
 
-   FONT_PATH = SWOLLEN_BINDIR + std::string( "/fonts/arial.ttf" );
+   FONT_PATH = ANUGA_VIEWER_BIN + std::string( "/fonts/arial.ttf" );
    std::cout << "FONT_PATH = " << FONT_PATH << std::endl;
-   //std::cout << "SWOLLEN_BINDIR = " << SWOLLEN_BINDIR << std::endl;
+   //std::cout << "ANUGA_VIEWER_BIN = " << ANUGA_VIEWER_BIN << std::endl;
 
    _font = osgText::readFontFile(FONT_PATH);	
 

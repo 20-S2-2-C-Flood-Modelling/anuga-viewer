@@ -9,16 +9,16 @@ The following instructions will take you through installing Anuga Viewer on a co
 
 #. To build anuga_viewer, install the following packages via::
 
-	  sudo apt-get install git build-essential libgdal-dev libcppunit-dev libopenscenegraph-dev
+	 sudo apt-get install git build-essential libgdal-dev libcppunit-dev libopenscenegraph-dev
 	  
 #. Get the anuga-viewer source from github.::
        
-         git clone https://github.com/GeoscienceAustralia/anuga-viewer.git
+         git clone https://github.com/20-S2-2-C-Flood-Modelling/anuga-viewer.git
 	 
 	 
 If you are using an old version of OpenSceneGraph (ie the default in Unbuntu 18.04) then clone the older version of the ANUGA Viewer via::
 
-	git clone -b 3.2 https://github.com/GeoscienceAustralia/anuga-viewer.git
+	 git clone -b 3.2 https://github.com/20-S2-2-C-Flood-Modelling/anuga-viewer.git
 
 #. Now, you should be able to build anuga-viewer. Do the following in the anuga-viewer folder::
 
@@ -27,8 +27,8 @@ If you are using an old version of OpenSceneGraph (ie the default in Unbuntu 18.
       
 #. Setup Environment variables in your `.bashrc` file::
     	
-    	export SWOLLEN_BINDIR=/home/<<your_ubuntu_user_directory>>/anuga-viewer/bin
-    	export PATH=$PATH:$SWOLLEN_BINDIR
+    	export ANUGA_VIEWER_BIN=/home/<<your_ubuntu_user_directory>>/anuga-viewer/bin
+    	export PATH=$PATH:$ANUGA_VIEWER_BIN
     	
 #. From a new terminal, test the install by going to directory `~/anuga-viewer/data` and running the following command  (use escape to get out of the viewer)::
 
