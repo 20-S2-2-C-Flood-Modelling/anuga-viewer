@@ -27,8 +27,8 @@ If you are using an old version of OpenSceneGraph (ie the default in Unbuntu 18.
       
 #. Setup Environment variables in your `.bashrc` file::
     	
-    	export SWOLLEN_BINDIR=/home/<<your_ubuntu_user_directory>>/anuga-viewer/bin
-    	export PATH=$PATH:$SWOLLEN_BINDIR
+    	export ANUGA_VIEWER_BIN=/home/<<your_ubuntu_user_directory>>/anuga-viewer/bin
+    	export PATH=$PATH:$ANUGA_VIEWER_BIN
     	
 #. From a new terminal, test the install by going to directory `~/anuga-viewer/data` and running the following command  (use escape to get out of the viewer)::
 
